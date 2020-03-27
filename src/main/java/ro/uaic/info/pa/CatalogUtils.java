@@ -10,6 +10,7 @@ public class CatalogUtils {
     public static void save(Catalog catalog) {
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream(catalog.getPath()))) {
             oos.writeObject(catalog);
+
         } catch (IOException ioe) {
             System.err.println("Unexpected error writing to file!");
         }

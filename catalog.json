@@ -1,0 +1,21 @@
+{
+  "name" : "Java Resources",
+  "path" : ".\\catalog.json",
+  "documents" : [ {
+    "id" : "java1",
+    "name" : "Java Course 1",
+    "type" : "ONLINE_RESOURCE",
+    "location" : "https://profs.info.uaic.ro/~acf/java/slides/en/intro_slide_en.pdf",
+    "tags" : {
+      "type" : "Slides"
+    }
+  }, {
+    "id" : "text1",
+    "name" : "Test Text File",
+    "type" : "LOCAL_RESOURCE",
+    "location" : ".\\test.txt",
+    "tags" : {
+      "type" : "Text"
+    }
+  } ]
+}

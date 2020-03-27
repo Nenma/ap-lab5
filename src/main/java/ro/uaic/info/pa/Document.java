@@ -12,6 +12,8 @@ public class Document implements Serializable {
     private String location;
     private Map<String, Object> tags;
 
+    public Document() {}
+
     public Document(String id, String name, DocumentType type, String location) {
         this.id = id;
         this.name = name;
@@ -42,5 +44,16 @@ public class Document implements Serializable {
 
     public Map<String, Object> getTags() {
         return tags;
+    }
+
+    @Override
+    public String toString() {
+        return "Document{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", type=" + type +
+                ", location='" + location + '\'' +
+                ", tags=" + tags +
+                '}';
     }
 }

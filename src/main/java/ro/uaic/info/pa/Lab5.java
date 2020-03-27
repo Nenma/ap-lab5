@@ -1,5 +1,7 @@
 package ro.uaic.info.pa;
 
+import optional.NonExistentDocumentException;
+
 public class Lab5 {
     public static void main(String[] args) {
         testCreateSave();
@@ -21,12 +23,12 @@ public class Lab5 {
         Catalog catalog = new Catalog();
         try {
             catalog = CatalogUtils.load(".\\catalog.ser");
-        } catch (InvalidCatalogException ice) {
-            System.err.println("Invalid catalog name!");
+            Document doc1 = catalog.findById("java1");
+            CatalogUtils.view(doc1);
+            Document doc2 = catalog.findById("text1");
+            CatalogUtils.view(doc2);
+        } catch (InvalidCatalogException | NonExistentDocumentException e) {
+            e.printStackTrace();
         }
-        Document doc1 = catalog.findById("java1");
-        CatalogUtils.view(doc1);
-        Document doc2 = catalog.findById("text1");
-        CatalogUtils.view(doc2);
     }
 }
