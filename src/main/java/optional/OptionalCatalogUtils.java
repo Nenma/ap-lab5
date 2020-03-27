@@ -10,6 +10,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Collections;
 
+/**
+ * Offers mainly the same utilities as CatalogUtils, with the notable difference
+ * that the catalog is being saved and loaded using a plain text representaion,
+ * in this case in JSON format
+ */
 public class OptionalCatalogUtils {
 
     private static ObjectMapper objectMapper = new ObjectMapper();

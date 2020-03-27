@@ -3,6 +3,10 @@ package optional;
 import ro.uaic.info.pa.Catalog;
 import ro.uaic.info.pa.InvalidCatalogException;
 
+/**
+ * Command subclass where the execute method loads the JSON file specified by
+ * the user and creates a catalog modeled after it
+ */
 public class LoadCommand extends Command{
 
     public LoadCommand() {

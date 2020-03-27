@@ -8,6 +8,11 @@ import java.io.File;
 import java.io.IOException;
 import java.util.Map;
 
+/**
+ * Command subclass where the execute method creates a new HTML file using the
+ * template.html file by replacing the placeholders denoted by '$' with
+ * information about the documents of the catalog
+ */
 public class ReportCommand extends Command{
 
     public ReportCommand() {
@@ -18,10 +23,6 @@ public class ReportCommand extends Command{
         super(catalog);
     }
 
-    /**
-     * Creates a new HTML file using the template.html file by replacing the placeholders with information
-     * about the documents of the catalog
-     */
     @Override
     void execute() {
         File htmlTemplateFile = new File("src/main/java/optional/templates/template.html");

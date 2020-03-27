@@ -5,6 +5,9 @@ import ro.uaic.info.pa.*;
 import java.io.File;
 import java.util.Scanner;
 
+/**
+ * Main class running the basic functionalities specified in the Optional tasks
+ */
 public class OptionalLab5 {
 
     private static Scanner input = new Scanner(System.in);
@@ -82,6 +85,9 @@ public class OptionalLab5 {
         System.out.println("\t-exit : exit the shell");
     }
 
+    /**
+     * Creates a dummy Catalog to be used for testing in the Main class
+     */
     private static void testCreateSave() {
         Catalog catalog = new Catalog("Java Resources", ".\\catalog.json");
         Document doc1 = new Document("java1", "Java Course 1", DocumentType.ONLINE_RESOURCE, "https://profs.info.uaic.ro/~acf/java/slides/en/intro_slide_en.pdf");

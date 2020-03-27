@@ -3,6 +3,11 @@ package optional;
 import ro.uaic.info.pa.Catalog;
 import ro.uaic.info.pa.CatalogUtils;
 
+/**
+ * Command subclass where the execute method does a simple search of the catalog
+ * using the name entered by the user and opens an appropriate app to open the
+ * found document
+ */
 public class ViewCommand extends Command{
 
     public ViewCommand() {

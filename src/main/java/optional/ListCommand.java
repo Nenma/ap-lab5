@@ -2,6 +2,10 @@ package optional;
 
 import ro.uaic.info.pa.Catalog;
 
+/**
+ * Command subclass where the execute method does a simple print of all the
+ * documents in the catalog
+ */
 public class ListCommand extends Command{
 
     public ListCommand() {
